@@ -10,23 +10,68 @@
             href="./assets/styles/main.scss"
         />
         <!-- do not remove this line! -->
-        <title>UOC Boilerplate</title>
+        <title>CV Jimena Arranz</title>
     </head>
     <body>
-        <img
-            src="assets/images/logo.png"
-            alt="Universitat Oberta de Catalunya"
-            class="uoc-logo"
-        />
-        <h1 class="uoc-title">Hello, UOC! <i class="fas fa-university"></i></h1>
-        <p>
-            This is a starter template for the Advanced HTML and CSS Tools
-            courses from the Master's Program in Multimedia Applications and the
-            Master's Program in Web App and Website Development at the
-            Universitat Oberta de Catalunya.
-        </p>
+        <div class="presentation">
+            <img
+                src="assets/images/Jimena_picture.jpg"
+                alt="Jimena Arranz's picture"
+                class="presentation__image"
+                sizes="(max-width: 425px) 50vw, 80vw"
+            />
+            <div class="presentation__info">
+                <h1>JIMENA ARRANZ HERRERA</h1>
+                <h2>Desarrolladora Frontend</h2>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Contacto</h3>
+            <div class="section__item">
+                <i class="far fa-envelope"></i>
+                <p>jimena.arranz@gmail.com</p>
+            </div>
+            <div class="section__item">
+                <i class="fas fa-phone-alt"></i>
+                <p>+34 690310645</p>
+            </div>
+            <div class="section__item">
+                <i class="fab fa-linkedin"></i>
+                <a
+                    href="https://www.linkedin.com/in/jimena-arranz-herrera-161180b9"
+                    >Jimena Arranz</a
+                >
+            </div>
+            <div class="section__item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Barcelona</p>
+            </div>
+        </div>
 
-        <script src="./assets/scripts/main.js"></script
-        ><!-- do not remove this line! -->
+        <div class="section">
+            <h3>Educación</h3>
+
+            <p>Universitat Oberta de Catalunya</p>
+            <p>Máster de Desarrollo de Sitios y Aplicaciones Web</p>
+            <p>2018-actualidad</p>
+
+
+            <div class="section__education">
+                <p>Universidad Carlos III de Madrid</p>
+                <p>Grado en Ingeniería en Tecnologías de Telecomunicación</p>
+                <p>2008-2014</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Experiencia laboral</h3>
+            <p>Everis</p>
+            <p>Desarrolladora Frontend</p>
+        </div>
+
+        <!-- <i class="fas fa-university"></i> -->
+
+        <script src="./assets/scripts/main.js"></script>
+        <!-- do not remove this line! -->
     </body>
 </html>

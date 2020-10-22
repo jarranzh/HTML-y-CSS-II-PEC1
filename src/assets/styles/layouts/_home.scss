@@ -1,21 +1,34 @@
 body {
   margin: 0;
-  padding: 30px;
+  // padding: 30px;
   font-family: $font-family-sans-serif;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
+  background-color: $background-color;
+  color: $primary-color;
+}
+.presentation {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+
+  &__image {
+    border-radius: 50%;
+  }
 }
 
-.uoc-logo {
-  display: block;
-  margin-bottom: 20px;
-  max-width: 300px;
-  height: auto;
-}
+.section {
+  // border: 1px solid $secondary-color;
+  // border-radius: 10px;
+  // margin: 10px 0;
+  // padding: 0 5px;
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+  &:nth-child(even){
+    background-color: $primary-color;
+    color: $background-color;
+  }
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 36px;
-  font-weight: 700;
-  color: $uoc-corporate;
+  &__education {
+  }
 }
