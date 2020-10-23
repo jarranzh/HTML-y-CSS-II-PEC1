@@ -1,34 +1,66 @@
 body {
   margin: 0;
-  // padding: 30px;
+  padding: 20px 0;
   font-family: $font-family-sans-serif;
   background-color: $background-color;
   color: $primary-color;
 }
+p {
+  margin: 0;
+}
 .presentation {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
+  flex-flow: column;
+  align-items: center;
 
   &__image {
     border-radius: 50%;
+    border: 3px solid $primary-color;
+  }
+
+  &__info{
+    text-align: center;
   }
 }
 
-.section {
-  // border: 1px solid $secondary-color;
-  // border-radius: 10px;
-  // margin: 10px 0;
-  // padding: 0 5px;
-  &__item {
-    display: flex;
-    align-items: center;
+@function borderColor($string) {
+  @if $string == even {
+    @return $background-color;
   }
-  &:nth-child(even){
-    background-color: $primary-color;
-    color: $background-color;
+  @if $string == odd {
+    @return $primary-color;
+  }
+  @return $background-color;
+}
+
+.section {
+  padding: 5px 20px;
+
+  &__item {
+    margin-bottom: 12px;
+    border-left: 1px solid borderColor(odd);
+    padding: 0 5px;
+
+    &--contact {
+      display: flex;
+      align-items: center;
+    }
   }
 
-  &__education {
+  &__title {
+    font-weight: bold;
+    padding-bottom: 3px;
+  }
+  &__date {
+    font-weight: lighter;
+  }
+
+  &:nth-child(even) {
+    background-color: $primary-color;
+    color: $background-color;
+
+    .section__item {
+      border-left: 1px solid borderColor(even);
+    }
   }
 }
