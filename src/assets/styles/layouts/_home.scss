@@ -5,9 +5,11 @@ body {
   background-color: $background-color;
   color: $primary-color;
 }
+
 p {
   margin: 0;
 }
+
 .presentation {
   display: flex;
   flex-flow: column;
@@ -18,27 +20,29 @@ p {
     border: 3px solid $primary-color;
   }
 
-  &__info{
+  &__info {
     text-align: center;
   }
 }
 
-@function borderColor($string) {
-  @if $string == even {
-    @return $background-color;
-  }
-  @if $string == odd {
-    @return $primary-color;
-  }
-  @return $background-color;
-}
+// @function borderColor($string) {
+//   @if $string == even {
+//     @return $background-color;
+//   }
+
+//   @if $string == odd {
+//     @return $primary-color;
+//   }
+
+//   @return $background-color;
+// }
 
 .section {
   padding: 5px 20px;
 
   &__item {
     margin-bottom: 12px;
-    border-left: 1px solid borderColor(odd);
+    border-left: 1px solid bordercolor(odd);
     padding: 0 5px;
 
     &--contact {
@@ -51,6 +55,7 @@ p {
     font-weight: bold;
     padding-bottom: 3px;
   }
+
   &__date {
     font-weight: lighter;
   }
@@ -59,8 +64,8 @@ p {
     background-color: $primary-color;
     color: $background-color;
 
-    .section__item {
-      border-left: 1px solid borderColor(even);
-    }
+    // .section__item {
+    //   border-left: 1px solid bordercolor(even);
+    // }
   }
 }
