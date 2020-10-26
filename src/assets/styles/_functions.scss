@@ -1,0 +1,11 @@
+@function bordercolor($string) {
+  @if $string == even {
+    @return $background-color;
+  }
+
+  @if $string == odd {
+    @return $primary-color;
+  }
+
+  @return $background-color;
+}

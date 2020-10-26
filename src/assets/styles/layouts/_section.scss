@@ -1,0 +1,53 @@
+@import "functions";
+
+.section {
+  padding: 5px 20px;
+
+  &__item {
+    margin-bottom: 12px;
+    border-left: 1px solid bordercolor(odd);
+    padding: 0 5px;
+    list-style: none;
+
+    &--secondary {
+      display: flex;
+      align-items: center;
+      border-left: 0 solid transparent;
+      padding: 0;
+    }
+
+    &--secondary a {
+      color: $background-color;
+    }
+  }
+
+  &__element {
+    padding-right: 5px;
+  }
+
+  &__title {
+    font-weight: bold;
+    padding-bottom: 3px;
+  }
+
+  &__date {
+    font-weight: lighter;
+  }
+
+  &:nth-child(even) {
+    background-color: $primary-color;
+    color: $background-color;
+  }
+
+  &:nth-child(even) .section__item {
+    border-left: 1px solid bordercolor(even);
+
+    &--secondary {
+      border-left: 0;
+    }
+  }
+}
+
+.section ul {
+  padding: 0;
+}

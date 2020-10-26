@@ -7,6 +7,7 @@ module.exports = {
     "no-descending-specificity": null,
     "no-eol-whitespace": null,
     "declaration-empty-line-before": null,
+    "rule-empty-line-before": "always",
     "value-keyword-case": null,
     "at-rule-no-unknown": [
       true,
@@ -17,7 +18,10 @@ module.exports = {
           "responsive",
           "variants",
           "screen",
-          "use"
+          "use",
+          "function",
+          "if",
+          "return"
         ]
       }
     ]
