@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 20px 0;
+  padding-top: 20px;
   font-family: $font-family-sans-serif;
   background-color: $background-color;
   color: $primary-color;
@@ -8,4 +8,55 @@ body {
 
 p {
   margin: 0;
+}
+
+.desktopContent {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+  .mobileContent {
+    display: none;
+  }
+
+  .desktopContent {
+    display: flex;
+
+    .col-1 {
+      width: 40%;
+
+      .section {
+        color: $background-color;
+        background-color: $primary-color;
+        border-bottom: 3px solid $background-color;
+      }
+    }
+
+    .col-2 {
+      width: 60%;
+
+      .section {
+        background-color: $background-color;
+        color: $primary-color;
+        border-bottom: 3px solid $primary-color;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  
+  .desktopContent {
+    width: 1024px;
+    margin: auto;
+
+    .col-2 {
+      width: 60%;
+
+      .section {
+        border-right: 3px solid $primary-color;
+      }
+    }
+  }
 }

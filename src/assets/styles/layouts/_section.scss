@@ -34,13 +34,13 @@
     font-weight: lighter;
   }
 
-  &:nth-child(even) {
+  &:nth-child(odd) {
     background-color: $primary-color;
     color: $background-color;
   }
 
-  &:nth-child(even) .section__item {
-    border-left: 1px solid bordercolor(even);
+  &:nth-child(odd) .section__item {
+    border-left: 1px solid bordercolor(odd);
 
     &--secondary {
       border-left: 0;

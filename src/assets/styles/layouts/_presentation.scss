@@ -12,3 +12,25 @@
     text-align: center;
   }
 }
+
+@media screen and (min-width: 768px) {
+    
+  .presentation {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    border-bottom: 3px solid $primary-color;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .presentation {
+    justify-content: center;
+
+    &__info {
+      padding: 0 80px;
+    }
+  }
+}
