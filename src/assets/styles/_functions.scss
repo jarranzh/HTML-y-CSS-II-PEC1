@@ -1,4 +1,4 @@
-@function bordercolor($string) {
+@function setcolor($string) {
   @if $string == even {
     @return $background-color;
   }

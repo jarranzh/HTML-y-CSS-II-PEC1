@@ -1,260 +1,156 @@
 <!DOCTYPE html>
 
 <html lang="es">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, user-scalable=no" />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="./assets/styles/main.scss"
-        />
-        <!-- do not remove this line! -->
-        <title>CV Jimena Arranz</title>
-    </head>
-    <body>
-        <div class="presentation">
-            <img
-                src="assets/images/Jimena_picture.jpg"
-                alt="Jimena Arranz's picture"
-                class="presentation__image"
-                sizes="(max-width: 425px) 50vw, 80vw"
-            />
-            <div class="presentation__info">
-                <h1>JIMENA ARRANZ HERRERA</h1>
-                <h2>Desarrolladora Frontend</h2>
-            </div>
-        </div>
-        <div class="mobileContent">
-            <div class="section">
-                <h3>Contacto</h3>
-                <ul>
-                    <li class="section__item section__item--secondary">
-                        <i class="far fa-envelope section__element"></i>
-                        <p>jimena.arranz@gmail.com</p>
-                    </li>
-                    <li class="section__item section__item--secondary">
-                        <i class="fas fa-phone-alt section__element"></i>
-                        <p>+34 690310645</p>
-                    </li>
-                    <li class="section__item section__item--secondary">
-                        <i class="fab fa-linkedin section__element"></i>
-                        <a
-                            href="https://www.linkedin.com/in/jimena-arranz-herrera-161180b9"
-                            >Jimena Arranz</a
-                        >
-                    </li>
-                    <li class="section__item section__item--secondary">
-                        <i class="fas fa-map-marker-alt section__element"></i>
-                        <p>Barcelona</p>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h3>Educación</h3>
-                <ul>
-                    <li class="section__item">
-                        <p class="section__title">
-                            Universitat Oberta de Catalunya
-                        </p>
-                        <p>Máster de Desarrollo de Sitios y Aplicaciones Web</p>
-                        <p class="section__date">2018-actualidad</p>
-                    </li>
-                    <li class="section__item">
-                        <p class="section__title">
-                            Universidad Carlos III de Madrid
-                        </p>
-                        <p>
-                            Grado en Ingeniería en Tecnologías de
-                            Telecomunicación
-                        </p>
-                        <p class="section__date">2008-2014</p>
-                    </li>
-                    <li class="section__item">
-                        <p class="section__title">RWTH Aachen University</p>
-                        <p>Erasmus</p>
-                        <p class="section__date">2012-2013</p>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h3>Experiencia laboral</h3>
-                <ul>
-                    <li class="section__item">
-                        <p class="section__title">Everis</p>
-                        <p>Desarrolladora Frontend</p>
-                        <p class="section__date">Enero 2020 - actualidad</p>
-                    </li>
-                    <li class="section__item">
-                        <p class="section__title">Altran</p>
-                        <p>Consultora automoción</p>
-                        <p class="section__date">Oct 2018 - Enero 2020</p>
-                    </li>
-                    <li class="section__item">
-                        <p class="section__title">Leyton</p>
-                        <p>Consultora I+D+i</p>
-                        <p class="section__date">Jun 2017 - Oct 2018</p>
-                    </li>
-                    <li class="section__item">
-                        <p class="section__title">F. Iniciativas</p>
-                        <p>Técnica de proyectos</p>
-                        <p class="section__date">Jun 2015 - Jun 2017</p>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h3>Tecnologías</h3>
-                <ul>
-                    <li class="section__item">HTML</li>
-                    <li class="section__item">CSS</li>
-                    <li class="section__item">JavaScript</li>
-                    <li class="section__item">React</li>
-                    <li class="section__item">Bootstrap / Material UI</li>
-                    <li class="section__item">GIT</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h3>Idiomas</h3>
-                <ul>
-                    <li class="section__item section__item--secondary">
-                        Inglés C1
-                    </li>
-                    <li class="section__item section__item--secondary">
-                        Francés B2
-                    </li>
-                    <li class="section__item section__item--secondary">
-                        Alemán A2
-                    </li>
-                </ul>
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <!-- do not remove this line! -->
+    <title>CV Jimena Arranz</title>
+  </head>
+  <body>
+    <div class="presentation">
+      <img
+        class="presentation__image"
+        src="assets/images/Jimena_picture.jpg"
+        alt="Jimena Arranz's picture"
+      />
+      <div class="presentation__info">
+        <h1>JIMENA ARRANZ HERRERA</h1>
+        <h2>Desarrolladora Frontend</h2>
+      </div>
+    </div>
+    <div class="mainContent">
+      <div
+        class="mainContent__secondaryContent mainContent__secondaryContent--left"
+      >
+        <div class="section section--odd">
+          <h3>Contacto</h3>
+          <ul class="section__content">
+            <li class="section__item section__item--secondary">
+              <i class="far fa-envelope section__icon"></i>
+              <p>jimena.arranz@gmail.com</p>
+            </li>
+            <li class="section__item section__item--secondary">
+              <i class="fas fa-phone-alt section__icon"></i>
+              <p>+34 690310645</p>
+            </li>
+            <li class="section__item section__item--secondary">
+              <i class="fab fa-linkedin section__icon"></i>
+              <a
+                href="https://www.linkedin.com/in/jimena-arranz-herrera-161180b9"
+                class="section__link"
+                >Jimena Arranz</a
+              >
+            </li>
+            <li class="section__item section__item--secondary">
+              <i class="fas fa-map-marker-alt section__icon"></i>
+              <p>Barcelona</p>
+            </li>
+          </ul>
         </div>
 
-        <!-- desktop -->
-
-        <div class="desktopContent">
-            <div class="col-1">
-                <div class="section">
-                    <h3>Contacto</h3>
-                    <ul>
-                        <li class="section__item section__item--secondary">
-                            <i class="far fa-envelope section__element"></i>
-                            <p>jimena.arranz@gmail.com</p>
-                        </li>
-                        <li class="section__item section__item--secondary">
-                            <i class="fas fa-phone-alt section__element"></i>
-                            <p>+34 690310645</p>
-                        </li>
-                        <li class="section__item section__item--secondary">
-                            <i class="fab fa-linkedin section__element"></i>
-                            <a
-                                href="https://www.linkedin.com/in/jimena-arranz-herrera-161180b9"
-                                >Jimena Arranz</a
-                            >
-                        </li>
-                        <li class="section__item section__item--secondary">
-                            <i
-                                class="fas fa-map-marker-alt section__element"
-                            ></i>
-                            <p>Barcelona</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="section">
-                        <h3>Tecnologías</h3>
-                        <ul>
-                            <li class="section__item">HTML</li>
-                            <li class="section__item">CSS</li>
-                            <li class="section__item">JavaScript</li>
-                            <li class="section__item">React</li>
-                            <li class="section__item">Bootstrap / Material UI</li>
-                            <li class="section__item">GIT</li>
-                        </ul>
-                    </div>
-
-                <div class="section">
-                    <h3>Idiomas</h3>
-                    <ul>
-                        <li class="section__item section__item--secondary">
-                            Inglés C1
-                        </li>
-                        <li class="section__item section__item--secondary">
-                            Francés B2
-                        </li>
-                        <li class="section__item section__item--secondary">
-                            Alemán A2
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-2">
-                <div class="section">
-                    <h3>Experiencia laboral</h3>
-                    <ul>
-                        <li class="section__item">
-                            <p class="section__title">Everis</p>
-                            <p>Desarrolladora Frontend</p>
-                            <p class="section__date">Enero 2020 - actualidad</p>
-                        </li>
-                        <li class="section__item">
-                            <p class="section__title">Altran</p>
-                            <p>Consultora automoción</p>
-                            <p class="section__date">Oct 2018 - Enero 2020</p>
-                        </li>
-                        <li class="section__item">
-                            <p class="section__title">Leyton</p>
-                            <p>Consultora I+D+i</p>
-                            <p class="section__date">Jun 2017 - Oct 2018</p>
-                        </li>
-                        <li class="section__item">
-                            <p class="section__title">F. Iniciativas</p>
-                            <p>Técnica de proyectos</p>
-                            <p class="section__date">Jun 2015 - Jun 2017</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="section">
-                        <h3>Educación</h3>
-                        <ul>
-                            <li class="section__item">
-                                <p class="section__title">
-                                    Universitat Oberta de Catalunya
-                                </p>
-                                <p>
-                                    Máster de Desarrollo de Sitios y Aplicaciones
-                                    Web
-                                </p>
-                                <p class="section__date">2018-actualidad</p>
-                            </li>
-                            <li class="section__item">
-                                <p class="section__title">
-                                    Universidad Carlos III de Madrid
-                                </p>
-                                <p>
-                                    Grado en Ingeniería en Tecnologías de
-                                    Telecomunicación
-                                </p>
-                                <p class="section__date">2008-2014</p>
-                            </li>
-                            <li class="section__item">
-                                <p class="section__title">RWTH Aachen University</p>
-                                <p>Erasmus</p>
-                                <p class="section__date">2012-2013</p>
-                            </li>
-                        </ul>
-                    </div>
-    
-            </div>
+        <div class="section section--even section--left">
+          <h3>Educación</h3>
+          <ul class="section__content">
+            <li class="section__item">
+              <p class="section__title">
+                Universitat Oberta de Catalunya
+              </p>
+              <p>Máster de Desarrollo de Sitios y Aplicaciones Web</p>
+              <p class="section__date">2018-actualidad</p>
+            </li>
+            <li class="section__item">
+              <p class="section__title">
+                Universidad Carlos III de Madrid
+              </p>
+              <p>
+                Grado en Ingeniería en Tecnologías de Telecomunicación
+              </p>
+              <p class="section__date">2008-2014</p>
+            </li>
+            <li class="section__item">
+              <p class="section__title">RWTH Aachen University</p>
+              <p>Erasmus</p>
+              <p class="section__date">2012-2013</p>
+            </li>
+          </ul>
         </div>
 
-        <!-- <i class="fas fa-university"></i> -->
+        <div class="section section--odd">
+          <h3>Idiomas</h3>
+          <ul class="section__content">
+            <li class="section__item section__item--secondary">
+              Inglés C1
+            </li>
+            <li class="section__item section__item--secondary">
+              Francés B2
+            </li>
+            <li class="section__item section__item--secondary">
+              Alemán A2
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="mainContent__secondaryContent mainContent__secondaryContent--right"
+      >
+        <div class="section section--even">
+          <h3>Experiencia laboral</h3>
+          <ul class="section__content">
+            <li class="section__item">
+              <p class="section__title">Everis Spain</p>
+              <p>Desarrolladora Frontend</p>
+              <p class="section__date">Enero 2020 - actualidad</p>
+            </li>
+            <li class="section__item">
+              <p class="section__title">Altran</p>
+              <p>Consultora automoción</p>
+              <p class="section__date">Oct 2018 - Enero 2020</p>
+            </li>
+            <li class="section__item">
+              <p class="section__title">Leyton Iberia</p>
+              <p>Consultora I+D+i</p>
+              <p class="section__date">Jun 2017 - Oct 2018</p>
+            </li>
+            <li class="section__item">
+              <p class="section__title">F. Iniciativas</p>
+              <p>Técnica de proyectos</p>
+              <p class="section__date">Jun 2015 - Jun 2017</p>
+            </li>
+          </ul>
+        </div>
 
-        <script src="./assets/scripts/main.js"></script>
-        <!-- do not remove this line! -->
-    </body>
+        <div class="section section--odd">
+          <h3>Tecnologías</h3>
+          <ul class="section__content">
+            <li class="section__item section__item--secondary">
+              <i class="fas fa-file-code section__icon"></i>
+              <p>HTML</p>
+            </li>
+            <li class="section__item section__item--secondary">
+              <i class="fab fa-css3-alt section__icon"></i>
+              <p>CSS / SCSS</p>
+            </li>
+            <li class="section__item section__item--secondary">
+              <i class="fab fa-js-square section__icon"></i>
+              <p>JavaScript / React</p>
+            </li>
+            <li class="section__item section__item--secondary">
+              <i class="fab fa-bootstrap section__icon"></i>
+              <p>Bootstrap / Material UI</p>
+            </li>
+            <li class="section__item section__item--secondary">
+              <i class="fab fa-github-square section__icon"></i>
+              <p>GIT</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/scripts/main.js"></script>
+    <!-- do not remove this line! -->
+  </body>
 </html>

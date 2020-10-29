@@ -2,52 +2,60 @@
 
 .section {
   padding: 5px 20px;
+}
 
-  &__item {
-    margin-bottom: 12px;
-    border-left: 1px solid bordercolor(odd);
-    padding: 0 5px;
-    list-style: none;
+@media screen and (min-width: 768px) {
+  
+  .section {
+    border-right: 3px solid $primary-color;
 
-    &--secondary {
-      display: flex;
-      align-items: center;
-      border-left: 0 solid transparent;
-      padding: 0;
-    }
-
-    &--secondary a {
-      color: $background-color;
-    }
-  }
-
-  &__element {
-    padding-right: 5px;
-  }
-
-  &__title {
-    font-weight: bold;
-    padding-bottom: 3px;
-  }
-
-  &__date {
-    font-weight: lighter;
-  }
-
-  &:nth-child(odd) {
-    background-color: $primary-color;
-    color: $background-color;
-  }
-
-  &:nth-child(odd) .section__item {
-    border-left: 1px solid bordercolor(odd);
-
-    &--secondary {
-      border-left: 0;
+    &--left {
+      border-left: 3px solid $primary-color;
     }
   }
 }
 
-.section ul {
+.section__content {
   padding: 0;
+}
+
+.section__item {
+  padding: 0 5px;
+  margin-bottom: 12px;
+  list-style: none;
+  border-left: 1px solid setcolor(odd);
+
+  &--secondary {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border-left: 0 solid transparent;
+  }
+}
+
+.section__link {
+  color: $background-color;
+}
+
+.section__icon {
+  padding-right: 5px;
+}
+
+.section__title {
+  padding-bottom: 3px;
+  font-weight: bold;
+}
+
+.section__date {
+  font-weight: lighter;
+}
+
+.section--odd {
+  color: setcolor(even);
+  background-color: setcolor(odd);
+}
+
+.section--even {
+  color: setcolor(odd);
+  background-color: setcolor(even);
 }
