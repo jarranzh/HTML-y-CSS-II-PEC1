@@ -7,7 +7,7 @@ module.exports = {
     "no-descending-specificity": null,
     "no-eol-whitespace": null,
     "declaration-empty-line-before": null,
-    "rule-empty-line-before": "always",
+    "rule-empty-line-before": ["always", { except: ["first-nested"] }],
     "value-keyword-case": null,
     "at-rule-no-unknown": [
       true,

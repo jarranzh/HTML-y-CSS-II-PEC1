@@ -11,23 +11,21 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-
-  .mainContent {
+  .main-content {
     display: flex;
 
-    &__secondaryContent--left {
+    &__secondary-content--left {
       width: 40%;
     }
 
-    &__secondaryContent--right {
+    &__secondary-content--right {
       width: 60%;
     }
   }
 }
 
 @media screen and (min-width: 1024px) {
-
-  .mainContent {
+  .main-content {
     width: 1024px;
     margin: auto;
   }

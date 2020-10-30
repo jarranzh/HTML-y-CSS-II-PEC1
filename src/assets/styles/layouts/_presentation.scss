@@ -14,7 +14,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    
   .presentation {
     display: flex;
     flex-flow: row;
@@ -25,12 +24,11 @@
 }
 
 @media screen and (min-width: 1024px) {
-
   .presentation {
     justify-content: center;
+  }
 
-    &__info {
-      padding: 0 80px;
-    }
+  .presentation__info {
+    padding: 0 80px;
   }
 }
